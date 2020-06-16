@@ -1,0 +1,174 @@
+﻿{ZL.Source id="文章模型数据源标签"/}<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link href="/Design/h5/css/swiper-3.3.1.min.css" rel="stylesheet" />
+<script src="/Design/h5/js/swiper-3.3.1.min.js"></script>
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/JS/Controls/B_User.js"></script>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<style>
+.home_list ul { min-height:18em;}
+</style>
+</head>
+<body>
+{ZL.Label id="全站头部"/} 
+
+<div class="cont_banner list_banner{SField sid="文章模型数据源标签" FD="FirstNodeID" page="0"/} cont_banner{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}">
+<div class="list_banner_c">{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}</div>
+</div>
+
+
+<div class="container margin_top20">
+<!--
+<div class="row padding5">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding10">
+-->
+<div class="mysite hidden-xs">
+<ol class="breadcrumb margin_bottom0">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V4" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ol>
+</div>
+
+<div class="myContent">
+<div class="myContent_t">
+<h1>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1>
+<div class="myAbbr hidden-xs">
+<span><i class="fa fa-clock-o"></i> 发布时间：{ZL:FormatDate({SField sid="文章模型数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/}</span>
+<span><i class="fa fa-eye"></i> 浏览次数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></span>
+<span><i class="fa fa-user"></i> 文章来源：{SField sid="文章模型数据源标签" FD="source" page="0"/}</span>
+<span><a href="/Class_1/NodePage.aspx?t={SField sid="文章模型数据源标签" FD="Title" page="0"/}-来自{$SiteName/}&urls={$SiteURL/}/item/{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}.aspx" target="_blank"><i class="fa  fa-share-alt-square"></i> 分享网址</a></span>
+</div>
+</div>
+
+<div class="myContent_c">
+{SField sid="文章模型数据源标签" FD="content" page="{SField sid="文章模型数据源标签" FD="K_pages" page="0"/}"/}
+</div>
+<div id="T_page">{ZL.Page id="默认内容分页标签" num="{SField sid="文章模型数据源标签" FD="pages" page="0"/}"/}</div>
+
+<div id="begin">
+<span>上一篇文章：{ZL.Label id="上一篇文章" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}</span><br/>
+<span>下一篇文章：{ZL.Label id="下一篇文章" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}</span>
+</div>
+
+<div class="home_list">
+<div class="home_list_t">相关文章</div>
+<div class="home_list_c">
+<ul style="min-height:18em">
+{ZL.Label id="相关文章列表输出" ShowNum="10" TitleNum="80" KeyWord="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" /}
+</ul>
+</div>
+</div>
+<!--home_list end-->
+
+</div>
+<!--home_list end-->
+
+<!--
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding10">
+
+<div class="swiper-container home_news_lp">
+<div class="swiper-wrapper">
+{ZL.Label id="首页输出滚动推荐新闻" NodeID="14" ShowNum="4" TitleNum="30" /}
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+
+<div class="home_news_vb">
+<div class="home_news_vbt">精彩回顾<span class="pull-right"><a href="{ZL:GetNodeLinkUrl(12)/}">More</a></span></div>
+<div class="home_news_vbc">
+<ul>
+{ZL.Label id="输出指定节点标题_带时间属性MMdd" NodeID="12" TitleNum="26" ShowNum="10" /}
+</ul>
+</div>
+</div>
+
+<div class="home_list">
+<div class="home_list_t">校园足球<span class="pull-right"><a href="{ZL:GetNodeLinkUrl(3)/}">More</a></span></div>
+<div class="home_list_c">
+<ul>
+{ZL.Label id="输出指定节点标题_带时间属性MMdd" NodeID="3" TitleNum="26" ShowNum="10" /}
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+-->
+
+</div>
+
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//手机下菜单效果
+$(function() {
+  $('.home_nav button.navbar-toggle').click(function(){ 
+    $('body').toggleClass('out');
+    $('nav.navbar-fixed-top').toggleClass('out');
+    if ($('body').hasClass('out')) {
+      $(this).focus();
+    } else {
+      $(this).blur();
+    }
+  });
+});
+
+$(document).click(function(e) {
+  if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+    e.preventDefault();
+    $('.home_nav button.navbar-toggle').trigger('click');
+  }
+}).keyup(function(e) {
+  if (e.keyCode == 27 && $('body').hasClass('out')) {
+    $('.home_nav button.navbar-toggle').trigger('click');
+  } 
+});
+var swiper1 = new Swiper('.home_news_lp', {
+	autoplay: 3000,
+	grabCursor: true,
+	pagination: '.home_news_lp .swiper-pagination',
+	paginationClickable: true,
+	nextButton: '.home_news_lp .swiper-button-next',
+	prevButton: '.home_news_lp .swiper-button-prev',
+	spaceBetween: 0
+});
+
+$().ready(function(e) {
+    $("#gid{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}").addClass("active");
+	$("#node{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}").addClass("active");
+	$("#node{SField sid="文章模型数据源标签" FD="FirstNodeID" page="0"/}").addClass("active");
+});
+var buser = new B_User();//会员ajax登录状态需要结合JS/Controls/B_User.js引用同步生效
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".home_userinfo>a").html(data.UserName);
+        $(".home_userinfo>a").attr("url","/User");
+        $(".home_userinfo .dropdown-menu li:nth-child(1)").hide();
+        $(".home_userinfo .dropdown-menu li:nth-child(2)").show();
+	}
+});
+function LogoutFun()
+{
+	buser.Logout(function(){location=location;});
+}
+$(".dropdown").mouseover(function(){
+    $(this).addClass("open");
+}).mouseout(function(){
+    $(this).removeClass("open");
+});
+</script>

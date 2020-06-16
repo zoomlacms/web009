@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>靖安足球协会_首页</title>
+<meta name="Keywords" content="足球协会,靖安足球,足协,中国足协">
+<meta name="Description" content="靖安足球协会，靖安最大的体育爱好者社团。">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/JS/jquery-1.11.1.min.js" ></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<link href="/dist/css/font-awesome.min.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link href="/Design/h5/css/swiper-3.3.1.min.css" rel="stylesheet" />
+<script src="/Design/h5/js/swiper-3.3.1.min.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="/dist/css/weui.min.css">
+<script src="/dist/js/weui.js"></script>
+<link href="/Template/JAZQ/style/global.css?id=20170113" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top home_nav" id="home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/"><img src="/Template/JAZQ/style/images/logo.svg" alt="靖安足球协会" /></a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="/">首页</a></li>
+<li id="gid1" class="dropdown"><a href="/Item/1.aspx">协会介绍</a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/Item/14.aspx">协会章程</a></li>
+<li><a href="/Item/19.aspx">协会制度</a></li>
+<li><a href="/Item/20.aspx">组织结构</a></li>
+</ul>
+</li>
+<li id="node2"><a href="/Class_2/Default.aspx">官方公告</a></li>
+<li id="node3"><a href="/Class_3/Default.aspx">校园足球</a></li>
+<li id="node6"><a href="/Class_6/Default.aspx">竞赛管理</a></li>
+<li id="node5"><a href="/Class_5/Default.aspx">赛事风采</a></li>
+<li id="node4"><a href="/Class_4/Default.aspx">足球文化</a></li>
+<li id="node14"><a href="/Class_14/Default.aspx">行业新闻</a></li>
+<li id="gid3"><a href="/Item/3.aspx">联系我们</a></li>
+<li class="home_nav_s">
+<a href="/Search/SearchList"><i class="fa fa-search"></i></a>
+<div class="home_nav_sc">
+<form role="search" method="get" action="/Search/SearchList" target="_blank">
+<div class="input-group">
+<input type="text" class="form-control" name="keyword" placeholder="全站检索">
+<span class="input-group-btn">
+<button type="submit" class="btn btn-default">搜索</button>
+</span>
+</div>
+</form>
+</div>
+</li>
+<li class="dropdown home_userinfo">
+<a href="/User/Login?ReturnUrl=/">登录</a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Register">注册</a></li>
+<li hidden><a href="javascript:;" onClick="LogoutFun();">退出</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<!--导航结束-->
+
+<!-- Swiper -->
+<div class="swiper-container home_banner">
+<div class="swiper-wrapper">
+<div class="swiper-slide home_banner1">
+<div class="home_banner1_c">
+<h3><a href="#"><span>各路足协，欢聚一堂！</span></a></h3>
+</div>
+</div>
+<div class="swiper-slide home_banner2">
+<div class="home_banner2_c">
+<h3><a href="#"><span>扬帆起航，吹响靖安足球的号角！</span></a></h3>
+</div>
+</div>
+<div class="swiper-slide home_banner3">
+<div class="home_banner3_c">
+<h3><a href="#"><span>足球的成功，在于刻苦的训练！</span></a></h3>
+</div>
+</div>
+<div class="swiper-slide home_banner4">
+<div class="home_banner4_c">
+<h3><a href="#"><span>校园足球，是足球的根基！</span></a></h3>
+</div>
+</div>
+<div class="swiper-slide home_banner5">
+<div class="home_banner5_c">
+<h3><a href="#"><span>场上是对手，场下是朋友！</span></a></h3>
+</div>
+</div>
+<div class="swiper-slide home_banner6">
+<div class="home_banner6_c">
+<h3><a href="#"><span>明日之星，辉煌靖安！</span></a></h3>
+</div>
+</div>
+</div>
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+<!--banner结束-->
+
+<div class="container home_news">
+<div class="row padding10">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5 home_news_l">
+
+<div class="swiper-container home_news_lp">
+<div class="swiper-wrapper">
+
+</div>
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+<!--home_news_lp end-->
+
+<div class="home_news_lb">
+<div class="home_news_lbt">协会公告<span class="pull-right"><a href="/Class_2/Default.aspx">More</a></span></div>
+<div class="home_news_lbc">
+<ul>
+
+<li><a href="/Item/97.aspx" title="2017年中国足球乙级联赛闪亮登场" target="_self" style="">2017年中国足球乙级联赛闪亮</a><span class="pull-right">03-13</span></li>
+
+<li><a href="/Item/34.aspx" title="中国足球协会关于印发《中国足球协会纪律准则》的通知" target="_self" style="">中国足球协会关于印发《中国</a><span class="pull-right">03-06</span></li>
+
+<li><a href="/Item/29.aspx" title="关于规范管理职业俱乐部的通知" target="_self" style="">关于规范管理职业俱乐部的通</a><span class="pull-right">03-06</span></li>
+
+</ul>
+</div>
+</div>
+<!--home_news_lb end-->
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding5">
+<div class="home_news_h">
+<div class="home_news_ht">最新消息<span class="pull-right"><a href="/Class_14/Default.aspx">More</a></span></div>
+
+<div class="home_news_hc">
+<ul>
+
+<li><a href="/Item/100.aspx" title="2016年靖安县校园（五人制）足球赛初中组比赛" target="_self" style="">2016年靖安县校园（五人制）足球...</a></li>
+
+<li><a href="/Item/99.aspx" title="靖安县第二届“体彩杯”足球赛" target="_self" style="">靖安县第二届“体彩杯”足球赛</a></li>
+
+<li><a href="/Item/98.aspx" title="江西省“贺岁杯”足球赛在靖安县举行" target="_self" style="">江西省“贺岁杯”足球赛在靖安县...</a></li>
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<!--home_news_h end-->
+
+<div class="home_news_s">
+<div class="home_news_st">协会赛事<span class="pull-right"><a href="/Class_5/Default.aspx">More</a></span></div>
+<div class="home_news_sc">
+<div class="row padding10">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padding5">
+<div class="home_news_scl">
+<div class="row padding10">
+<ul>
+
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding5">
+<a href="/Item/104.aspx" title="2016年靖安县校园（五人制）足球赛初中组比赛精彩场面" target="_self"><img src="/UploadFiles/system/temp/20170331/20170331100813qjvv.jpg" alt="2016年靖安县校园（五人制）足球赛初中组比赛精彩场面" onerror="javascript:this.src='/UploadFiles/nopic.gif';" /></a>
+<h3><a href="/Item/104.aspx" title="2016年靖安县校园（五人制）足球赛初中组比赛精彩场面" target="_self">2016年靖安县校园（五人制）足球</a></h3>
+</li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 padding5">
+<div class="home_news_scr">
+<ul>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--home_news_s end-->
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding5">
+<div class="home_news_v">
+<div class="home_news_vt">
+<!-- Swiper -->
+<div class="swiper-container gallery-top">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<a href="/Item/95.aspx" title="足球教学：3招打牢足球基本功" target="_self">
+<img src="/UploadFiles/Image/20170309/6362466492007176817804845.jpg" alt="足球教学：3招打牢足球基本功" onerror="javascript:this.src='/UploadFiles/nopic.gif';" />
+</a>
+</div>
+<div class="swiper-slide">
+<a href="/Item/94.aspx" title="体能是关键，基础耐力、力量、速度训练！" target="_self">
+<img src="/UploadFiles/Image/20170309/6362464736678979014731569.jpg" alt="体能是关键，基础耐力、力量、速度训练！" onerror="javascript:this.src='/UploadFiles/nopic.gif';" />
+</a>
+</div>
+<div class="swiper-slide">
+<a href="/Item/93.aspx" title="【跟我练】足球基本功教程汇总！" target="_self">
+<img src="/UploadFiles/Image/20170308/6362459265593985615935295.jpg" alt="【跟我练】足球基本功教程汇总！" onerror="javascript:this.src='/UploadFiles/nopic.gif';" />
+</a>
+</div>
+</div>
+<!-- Add Arrows -->
+<div class="swiper-button-next swiper-button-white"></div>
+<div class="swiper-button-prev swiper-button-white"></div>
+</div>
+<div class="swiper-container gallery-thumbs">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<img src="/UploadFiles/Image/20170309/6362466492007176817804845.jpg" alt="足球教学：3招打牢足球基本功" onerror="javascript:this.src='/UploadFiles/nopic.gif';" />
+</div>
+<div class="swiper-slide">
+<img src="/UploadFiles/Image/20170309/6362464736678979014731569.jpg" alt="体能是关键，基础耐力、力量、速度训练！" onerror="javascript:this.src='/UploadFiles/nopic.gif';" />
+</div>
+<div class="swiper-slide">
+<img src="/UploadFiles/Image/20170308/6362459265593985615935295.jpg" alt="【跟我练】足球基本功教程汇总！" onerror="javascript:this.src='/UploadFiles/nopic.gif';" />
+</div>
+</div>
+</div>
+</div>
+<!--home_news_vt end-->
+
+<div class="home_news_vb">
+<div class="home_news_vbt">精彩回顾<span class="pull-right"><a href="/Class_12/Default.aspx">More</a></span></div>
+<div class="home_news_vbc">
+<ul>
+
+</ul>
+</div>
+</div>
+<!--home_news_vb end-->
+
+</div>
+<!--home_news_v end-->
+
+</div>
+</div>
+</div>
+<!--home_news end-->
+
+<div class="container">
+<div class="home_eventsy">
+<div class="home_eventsy_t">活动集锦<span>Eventsy</span><span class="pull-right"><a href="/Class_11/Default.aspx">More <i class="fa fa-plus-square"></i></a></span></div>
+<div class="home_eventsy_p">
+<div class="row padding10">
+</div>
+</div>
+</div>
+</div>
+<!--home_eventsy end-->
+
+
+<div class="container">
+<div class="row padding10">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<div class="home_list">
+<div class="home_list_t">女子足球<span class="pull-right"><a href="/Class_17/Default.aspx">More</a></span></div>
+<div class="home_list_c">
+<ul>
+
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<div class="home_list">
+<div class="home_list_t">足球动态<span class="pull-right"><a href="/Class_14/Default.aspx">More</a></span></div>
+<div class="home_list_c">
+<ul>
+
+<li><a href="/Item/100.aspx" title="2016年靖安县校园（五人制）足球赛初中组比赛" target="_self" style="">2016年靖安县校园（五人制）足球赛初中</a><span class="pull-right">03-14</span></li>
+
+<li><a href="/Item/99.aspx" title="靖安县第二届“体彩杯”足球赛" target="_self" style="">靖安县第二届“体彩杯”足球赛</a><span class="pull-right">03-14</span></li>
+
+<li><a href="/Item/98.aspx" title="江西省“贺岁杯”足球赛在靖安县举行" target="_self" style="">江西省“贺岁杯”足球赛在靖安县举行</a><span class="pull-right">03-14</span></li>
+
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding5">
+<div class="home_list">
+<div class="home_list_t">足球文化<span class="pull-right"><a href="/Class_4/Default.aspx">More</a></span></div>
+<div class="home_list_c">
+<ul>
+
+<li><a href="/Item/102.aspx" title="靖安县第一届会员代表大会" target="_self" style="">靖安县第一届会员代表大会</a><span class="pull-right">03-31</span></li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container home_friend">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">友情链接</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<div class="row padding10">
+
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 padding5"><div class="home_friend_c"><a href="http://www.fa.org.cn/" title="中国足球协会" target="_blank"><img src="/UploadFiles/system/temp/20170306/20170306210839nhfm.jpg" alt="中国足球协会" /></a></div></div>
+</div>
+</div>
+</div>
+</div>
+<!--home_friend end-->
+
+<div class="home_footer">
+<div class="container">
+<p>
+<a href="/Item/1.aspx">关于我们</a>
+<a href="/Item/3.aspx">联系我们</a>
+<a href="/Item/2.aspx">版权声明</a>
+<a href="/Class_2/Default.aspx">官方公告</a>
+<a href="/Class_3/Default.aspx">校园足球</a>
+<a href="/Class_4/Default.aspx">足球文化</a>
+<a href="/Class_5/Default.aspx">赛事风采</a>
+<a href="/Item/4.aspx">使用帮助</a>
+<a href="/Guest">留言反馈</a>
+<a href="/Class_15/Default.aspx">网站地图</a>
+<br/>
+<script src="/js/mobile.js"></script>
+Copyright &copy; 2017 All Rights Reserved 靖安足球协会  版权所有 客服热线：<a href="tel:0795-4766024">0795-4766024</a> <a href="http://www.miitbeian.gov.cn" target="_blank">赣ICP备17002524号</a>
+</p>
+</div>
+</div>
+
+<!--弹出注册窗-->
+<div class="weui-skin_android" id="User_Register">
+<div class="weui-mask" style="z-index:2008;"></div>
+<div class="weui-actionsheet">
+<div class="myuser_mobile">
+<div class="myuser_mobile_t">会员注册 <a onClick="Close_R();" style="position:absolute; top:-0.4em; font-size:1.5em; right:0.1em;"><i class="fa fa-close"></i></i></a></div>
+<div class="myuser_mobile_c">
+<form action="/User/Index/Register_Submit" method="post" onsubmit="return checkForm(this)">
+<div class="weui-cells weui-cells_form" style="margin-top:0; overflow:visible; font-size:1em;">
+
+<div class="weui-cell">
+<div class="weui-cell__hd"><label class="weui-label" style="width:60px;">用户名</label></div>
+<div class="weui-cell__bd">
+<input type="text" class="form-control input-sm" placeholder="请输入用户名" id="TxtUserName" name="TxtUserName"/>
+</div>
+</div>
+
+<div class="weui-cell">
+<div class="weui-cell__hd"><label class="weui-label" style="width:60px;">手机号</label></div>
+<div class="weui-cell__bd">
+<input type="number" class="form-control input-sm" placeholder="请输入号码" id="TxtMobile" name="TxtMobile"/>
+</div>
+</div>
+
+<div class="weui-cell">
+<div class="weui-cell__hd"><label class="weui-label" style="width:60px;">邮箱</label></div>
+<div class="weui-cell__bd">
+<input type="text" class="form-control input-sm" placeholder="请输入邮箱" id="TxtEmail" name="TxtEmail"/>
+</div>
+</div>
+
+<div class="weui-cell">
+<div class="weui-cell__hd"><label class="weui-label" style="width:60px;">密码</label></div>
+<div class="weui-cell__bd">
+<input type="password" class="form-control input-sm" placeholder="请输入密码" id="TxtPassword" name="TxtPassword"/>
+</div>
+</div>
+
+<div class="weui-cell">
+<div class="weui-cell__hd"><label class="weui-label" style="width:60px;">确认密码</label></div>
+<div class="weui-cell__bd">
+<input type="password" class="form-control input-sm" placeholder="请再确认密码" id="TxtPwdConfirm" name="TxtPwdConfirm"/>
+</div>
+</div>
+
+<div class="weui-cell" id="Reg_SelGroup">
+<div class="weui-cell__hd"><label class="weui-label" style="width:60px;">注册类型</label></div>
+<div class="weui-cell__bd">
+<select class="weui-select" style="height:30px; line-height:30px;">
+<option selected="" value="球迷">球迷</option>
+<option value="教练">教练</option>
+<option value="裁判员">裁判员</option>
+<option value="其他">其他</option>
+</select>
+<input type="hidden" id="txt_zclx" name="txt_zclx" value="1"/>
+</div>
+</div>
+
+</div>
+
+<div class="weui-btn-area"><button type="submit" class="weui-btn weui-btn_primary" id="BtnSubmit">注册会员</button></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script>
+var swiper = new Swiper('.home_banner', {
+	autoplay: 2500,
+	grabCursor: true,
+	pagination: '.home_banner .swiper-pagination',
+	paginationClickable: true,
+	nextButton: '.home_banner .swiper-button-next',
+	prevButton: '.home_banner .swiper-button-prev',
+	spaceBetween: 0
+});
+var swiper1 = new Swiper('.home_news_lp', {
+	autoplay: 3000,
+	grabCursor: true,
+	pagination: '.home_news_lp .swiper-pagination',
+	paginationClickable: true,
+	nextButton: '.home_news_lp .swiper-button-next',
+	prevButton: '.home_news_lp .swiper-button-prev',
+	spaceBetween: 0
+});
+var galleryTop = new Swiper('.home_news_vt .gallery-top', {
+	nextButton: '.home_news_vt .swiper-button-next',
+	prevButton: '.home_news_vt .swiper-button-prev',
+	spaceBetween: 10,
+});
+var galleryThumbs = new Swiper('.home_news_vt .gallery-thumbs', {
+	spaceBetween: 10,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	touchRatio: 0.2,
+	slideToClickedSlide: true
+});
+galleryTop.params.control = galleryThumbs;
+galleryThumbs.params.control = galleryTop;
+
+//手机下菜单效果
+$(function() {
+  $('.home_nav button.navbar-toggle').click(function(){ 
+    $('body').toggleClass('out');
+    $('nav.navbar-fixed-top').toggleClass('out');
+    if ($('body').hasClass('out')) {
+      $(this).focus();
+    } else {
+      $(this).blur();
+    }
+  });
+});
+
+$(document).click(function(e) {
+  if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+    e.preventDefault();
+    $('.home_nav button.navbar-toggle').trigger('click');
+  }
+}).keyup(function(e) {
+  if (e.keyCode == 27 && $('body').hasClass('out')) {
+    $('.home_nav button.navbar-toggle').trigger('click');
+  } 
+});
+var buser = new B_User();//会员ajax登录状态需要结合JS/Controls/B_User.js引用同步生效
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".home_userinfo>a").html(data.UserName);
+        $(".home_userinfo>a").attr("url","/User");
+        $(".home_userinfo .dropdown-menu li:nth-child(1)").hide();
+        $(".home_userinfo .dropdown-menu li:nth-child(2)").show();
+	}
+    else
+    {
+        if(document.body.clientWidth<=769) $("#User_Register").show();
+    }
+});
+function LogoutFun()
+{
+	buser.Logout(function(){location="/";});
+}
+$(".dropdown").mouseover(function(){
+    $(this).addClass("open");
+}).mouseout(function(){
+    $(this).removeClass("open");
+});
+function Close_R()
+{
+    $("#User_Register").hide();
+}
+/*验证表单*/
+function checkForm(form){
+    var UserName = form.TxtUserName.value;
+    var TxtMobile = form.TxtMobile.value;
+    var TxtEmail = form.TxtEmail.value;
+    var TxtPassword = form.TxtPassword.value;
+    var TxtPwdConfirm = form.TxtPwdConfirm.value;
+    var regMobile = /^1\d{10}$/;
+    var regEmail = /^\w+@\w+(\.[a-zA-Z]{2,3}){1,2}$/;
+    console.log(regMobile.test("14564564569"));
+    if(UserName.length<4 || UserName.length>40){
+        weui.alert("用户名长度必须大于4，并小于40!");
+        return false;
+    }else if(regMobile.test(TxtMobile)==false){
+        weui.alert("请输入正确的手机号！");
+        return false;
+    }else if(regEmail.test(TxtEmail)==false){
+        weui.alert("请输入正确的邮箱！");
+        return false;
+    }else if(TxtPassword==''){
+        weui.alert("请输入密码！");
+        return false;
+    }else if(TxtPassword!=TxtPwdConfirm){
+        weui.alert("请确认两次输入的密码一致！");
+        return false;
+    }
+    return true;
+}
+$("#Reg_SelGroup select").change(function(){ $("#txt_zclx").val($(this).val()); });
+</script>

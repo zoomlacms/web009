@@ -1,0 +1,10 @@
+﻿@using System.Data
+@using ZoomLa.Model
+@{ 
+    M_UserInfo mu = ViewBag.mu;
+    DataTable cateDt = ViewBag.cateDt;
+}
+@MvcHtmlString.Create(Call.GetLabel("{ZL.Label id=\"全站头部\"/}"))
+<div class="cont_banner" style="margin-bottom:20px;">
+<div class="list_banner_c">留言中心</div>
+</div>

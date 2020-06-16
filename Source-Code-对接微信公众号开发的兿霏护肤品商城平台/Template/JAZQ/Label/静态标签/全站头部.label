@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>313</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;nav class="navbar navbar-default navbar-fixed-top home_nav" id="home_nav"&gt;
+&lt;div class="container"&gt;
+&lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+&lt;div class="navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a class="navbar-brand" href="/"&gt;&lt;img src="{$LogoUrl/}" alt="{$SiteName/}" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+&lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+&lt;ul class="nav navbar-nav"&gt;
+&lt;li&gt;&lt;a href="/"&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gid1" class="dropdown"&gt;&lt;a href="{ZL:GetInfoUrl(1)/}"&gt;协会介绍&lt;/a&gt;
+&lt;ul class="dropdown-menu" role="menu"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(14)/}"&gt;协会章程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(19)/}"&gt;协会制度&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(20)/}"&gt;组织结构&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="node2"&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}"&gt;官方公告&lt;/a&gt;&lt;/li&gt;
+&lt;li id="node3"&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}"&gt;校园足球&lt;/a&gt;&lt;/li&gt;
+&lt;li id="node6"&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}"&gt;竞赛管理&lt;/a&gt;&lt;/li&gt;
+&lt;li id="node5"&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;赛事风采&lt;/a&gt;&lt;/li&gt;
+&lt;li id="node4"&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}"&gt;足球文化&lt;/a&gt;&lt;/li&gt;
+&lt;li id="node14"&gt;&lt;a href="{ZL:GetNodeLinkUrl(14)/}"&gt;行业新闻&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gid3"&gt;&lt;a href="{ZL:GetInfoUrl(3)/}"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;li class="home_nav_s"&gt;
+&lt;a href="/Search/SearchList"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;div class="home_nav_sc"&gt;
+&lt;form role="search" method="get" action="/Search/SearchList" target="_blank"&gt;
+&lt;div class="input-group"&gt;
+&lt;input type="text" class="form-control" name="keyword" placeholder="全站检索"&gt;
+&lt;span class="input-group-btn"&gt;
+&lt;button type="submit" class="btn btn-default"&gt;搜索&lt;/button&gt;
+&lt;/span&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class="dropdown home_userinfo"&gt;
+&lt;a href="/User/Login?ReturnUrl=/"&gt;登录&lt;/a&gt;
+&lt;ul class="dropdown-menu" role="menu"&gt;
+&lt;li&gt;&lt;a href="/User/Register"&gt;注册&lt;/a&gt;&lt;/li&gt;
+&lt;li hidden&gt;&lt;a href="javascript:;" onClick="LogoutFun();"&gt;退出&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;
+&lt;!--导航结束--&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

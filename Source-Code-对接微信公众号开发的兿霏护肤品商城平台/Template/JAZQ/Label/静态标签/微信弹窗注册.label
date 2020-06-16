@@ -1,0 +1,95 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>327</LabelID>
+    <LabelName>微信弹窗注册</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;!--弹出注册窗--&gt;
+&lt;div class="weui-skin_android" id="User_Register"&gt;
+&lt;div class="weui-mask" style="z-index:2008;"&gt;&lt;/div&gt;
+&lt;div class="weui-actionsheet"&gt;
+&lt;div class="myuser_mobile"&gt;
+&lt;div class="myuser_mobile_t"&gt;会员注册 &lt;a onClick="Close_R();" style="position:absolute; top:-0.4em; font-size:1.5em; right:0.1em;"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="myuser_mobile_c"&gt;
+&lt;form action="/User/Index/Register_Submit" method="post" onsubmit="return checkForm(this)"&gt;
+&lt;div class="weui-cells weui-cells_form" style="margin-top:0; overflow:visible; font-size:1em;"&gt;
+
+&lt;div class="weui-cell"&gt;
+&lt;div class="weui-cell__hd"&gt;&lt;label class="weui-label" style="width:60px;"&gt;用户名&lt;/label&gt;&lt;/div&gt;
+&lt;div class="weui-cell__bd"&gt;
+&lt;input type="text" class="form-control input-sm" placeholder="请输入用户名" id="TxtUserName" name="TxtUserName" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  
+&lt;div class="weui-cell"&gt;
+&lt;div class="weui-cell__hd"&gt;&lt;label class="weui-label" style="width:60px;"&gt;手机号&lt;/label&gt;&lt;/div&gt;
+&lt;div class="weui-cell__bd"&gt;
+&lt;input type="number" class="form-control input-sm" placeholder="请输入号码" id="TxtMobile" name="TxtMobile"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="weui-cell"&gt;
+&lt;div class="weui-cell__hd"&gt;&lt;label class="weui-label" style="width:60px;"&gt;邮箱&lt;/label&gt;&lt;/div&gt;
+&lt;div class="weui-cell__bd"&gt;
+&lt;input type="text" class="form-control input-sm" placeholder="请输入邮箱" id="TxtEmail" name="TxtEmail"/&gt;
+&lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;div class="weui-cell"&gt;
+&lt;div class="weui-cell__hd"&gt;&lt;label class="weui-label" style="width:60px;"&gt;密码&lt;/label&gt;&lt;/div&gt;
+&lt;div class="weui-cell__bd"&gt;
+&lt;input type="password" class="form-control input-sm" placeholder="请输入密码" id="TxtPassword" name="TxtPassword" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="weui-cell"&gt;
+&lt;div class="weui-cell__hd"&gt;&lt;label class="weui-label" style="width:60px;"&gt;确认密码&lt;/label&gt;&lt;/div&gt;
+&lt;div class="weui-cell__bd"&gt;
+&lt;input type="password" class="form-control input-sm" placeholder="请再确认密码" id="TxtPwdConfirm" name="TxtPwdConfirm" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="weui-cell" id="Reg_SelGroup"&gt;
+&lt;div class="weui-cell__hd"&gt;&lt;label class="weui-label" style="width:60px;"&gt;注册类型&lt;/label&gt;&lt;/div&gt;
+&lt;div class="weui-cell__bd"&gt;
+&lt;select class="weui-select" style="height:30px; line-height:30px;"&gt;
+&lt;option selected="" value="球迷"&gt;球迷&lt;/option&gt;
+&lt;option value="教练"&gt;教练&lt;/option&gt;
+&lt;option value="裁判员"&gt;裁判员&lt;/option&gt;
+&lt;option value="其他"&gt;其他&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type="hidden" id="txt_zclx" name="txt_zclx" value="1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;div class="weui-btn-area"&gt;&lt;button type="submit" class="weui-btn weui-btn_primary" id="BtnSubmit"&gt;注册会员&lt;/button&gt;&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

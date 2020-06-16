@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>317</LabelID>
+    <LabelName>输出图片列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>靖安足协专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|TitleNum,30,1,标题长|ShowNum,16,1,显示数|SysNum,100,1,简介数</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_Photo ON ZL_CommonModel.ItemID=ZL_C_Photo.ID</LabelTable>
+    <LabelField>ZL_CommonModel.CreateTime,ZL_CommonModel.GeneralID,ZL_CommonModel.Hits,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_C_Photo.PhotoUrlThum,ZL_C_Photo.source,ZL_C_Photo.synopsis</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) And Status=99 And ModelID=3</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="row padding5"&gt;
+{Repeate}
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding10"&gt;
+&lt;div class="page_pic_c"&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;
+&lt;div class="page_pic_ct"&gt;&lt;img src="{ZL:GetPicUrl({Field="PhotoUrlThum"/})/}" alt="{Field="Title"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';" /&gt;&lt;/div&gt;
+&lt;div class="page_pic_cp"&gt;
+&lt;h3&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/h3&gt;
+&lt;p&gt;{ZL:CutText({Field="synopsis"/},@SysNum,)/}&lt;/p&gt;
+&lt;p&gt;
+&lt;span&gt;&lt;i class="fa fa-clock-o"&gt;&lt;/i&gt; {ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/span&gt;
+&lt;span&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; {Field="source"/}&lt;/span&gt;
+&lt;span&gt;&lt;i class="fa fa-eye"&gt;&lt;/i&gt; {Field="Hits"/}&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;{/Repeate}
+&lt;/div&gt;
+{ZL.Page id="响应式列表分页v4"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_Photo"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

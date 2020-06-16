@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>316</LabelID>
+    <LabelName>循环输出子节点文章列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>靖安足协专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>TitleNum,30,1,标题长|ShowNum,10,1,显示数|NodeID,1,1,节点ID</LabelParam>
+    <LabelTable>ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName</LabelField>
+    <LabelWhere>ParentID=@NodeID And NodeID in (select NodeID from ZL_CommonModel where (NodeID=@NodeID or FirstNodeID=@NodeID) And Status=99)</LabelWhere>
+    <LabelOrder>ZL_Node.OrderID ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="page_plist"&gt;
+&lt;div class="page_plist_t"&gt;{Field="NodeName"/}&lt;span class="pull-right"&gt;&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}"&gt;More&lt;i class="fa fa-plus-square"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class="page_plist_c"&gt;
+&lt;ul&gt;
+{ZL.Label id="输出指定节点标题_带时间属性" NodeID="{Field="NodeID"/}" TitleNum="@TitleNum" ShowNum="@ShowNum" /}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;{/Repeate}</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_Node","tb_s":""}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

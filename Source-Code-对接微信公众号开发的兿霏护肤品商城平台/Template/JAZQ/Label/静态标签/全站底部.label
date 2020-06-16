@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>314</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="home_footer"&gt;
+&lt;div class="container"&gt;
+&lt;p&gt;
+&lt;a href="{ZL:GetInfoUrl(1)/}"&gt;关于我们&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(3)/}"&gt;联系我们&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(2)/}"&gt;版权声明&lt;/a&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(2)/}"&gt;官方公告&lt;/a&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(3)/}"&gt;校园足球&lt;/a&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(4)/}"&gt;足球文化&lt;/a&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;赛事风采&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(4)/}"&gt;使用帮助&lt;/a&gt;
+&lt;a href="/Guest"&gt;留言反馈&lt;/a&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(15)/}"&gt;网站地图&lt;/a&gt;
+&lt;br/&gt;
+{$Copyright/}
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>
